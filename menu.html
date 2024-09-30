@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- internal style sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .menu_banner {
+            background-image: url("menu_bg.jpg");
+            height: 50vh;
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .banner_heading{
+            text-align: center;
+            top: 50%;
+            left: 46%;
+            position: absolute;
+            background-color: #1e4530;
+            color: #fceedc;
+            padding: 0 2rem;
+            font-size: 1.25rem;
+        }
+
+        .menu_title {
+            font-size: 2rem;
+            padding: .5rem 0;
+        }
+
+        .menu_section {
+            justify-content: center;
+            display: block;
+            text-align: center;
+        }
+        .menu_div {
+            margin: 0 auto;
+            text-align: center;
+            line-height: 2rem;
+        }
+
+        .menu_subtext {
+            line-height: 1.25rem;
+            color: #1e4530;
+        }
+     
+        .menu_images {
+            display: flex;
+            padding: 1rem .25rem;
+            column-gap: 1rem;
+            margin-bottom: 5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 812px) { 
+        .menu_images {
+            margin: auto;
+            flex-direction: column;
+            row-gap: .5rem;
+            align-items: center;
+            width: 100%;
+            }
+        
+        .menu_item {
+            width: 100%;
+            }
+        }
+
+        .menu_item {
+            width: 15%;
+        }
+    </style>
+
+    <title>Delightful Dessert Shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_content">
+            <div class="header_logo">
+                <a href="#"><img src="favicon.png" class="logo"></a>
+                <a href="#" class="logo_text">Delightful Dessert Shop</a>
+            </div>
+
+            <nav>
+                <ul class="navi_list">
+                       <!-- insert links -->
+                    <li>
+                        <a href="#" class="navi_link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">Contact</a>
+                    </li>
+                </ul>  
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="menu_banner">
+            <div class="banner_heading">
+                <h1>Menu</h1>
+            </div>
+        </div>
+    </section>
+   
+    <section class="menu_section">
+        <div class="menu_div">
+            <h2 class="menu_title">Fall 2024 Menu</h2>
+            <p class="menu_subtext">Our menu changes seasonally, </p>
+            <p class="menu_subtext">so check back to see what's cooking or give us a call!</p>
+            <br>
+            <p class="menu_subtext">Lotus Seed Salted Egg Yolk Mooncake</p>
+            <p class="menu_subtext">Shaved Ice</p>
+            <p class="menu_subtext">Mango Pudding</p>
+            <p class="menu_subtext">Pandan Cake</p>
+            <p class="menu_subtext">Sesame Ball</p>
+            </div>
+    </section>
+
+    <section class="menu_images_section">
+        <div class="menu_images">
+            <img src="mango.jpg" class="menu_item">
+            <img src="sesame_ball.jpg" class="menu_item">
+            <img src="pandan.jpg" class="menu_item">
+            <img src="shaved_ice.jpg" class="menu_item">
+            <img src="mooncake.jpg" class="menu_item">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_content">
+            <div class="footer_info">
+                <p>Delightful Dessert Shop</p>
+                <p>364 Boston Ave, Medford, MA, 02155 </p>
+            </div>
+            <a href="mailto:hello@delightfuldessert.com" class="email">hello@delightfuldessert.com</a>
+            
+        </div>
+    </footer>
+</body>
+</html>
