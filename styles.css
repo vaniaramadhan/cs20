@@ -1,0 +1,164 @@
+body {
+    background-color:#fceedc;
+    font-family: "Playpen Sans", "Poppins", serif;
+    margin: 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fceedc;
+    padding: .25rem;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 65%;
+}
+
+.logo_text {
+    font-size: 1.25rem
+}
+
+.navi_list {
+    display: flex;
+    column-gap: 2rem;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fceedc;
+    padding: .25rem;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer_info {
+    display: flex;
+    column-gap: 4rem;
+    align-items: left;
+}
+/* BODY STYLES (HERO) */
+.text {
+    display: flex;
+    flex-direction: column;
+    color:#1e4530;
+    justify-content: center;
+
+}
+
+.hero {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.hero_img {
+    width: 25%;
+}
+
+button {
+    width: 25%;
+    padding: .25rem;
+    margin-top: 1rem;
+    background-color:#1e4530;
+    font-family: inherit;
+    font-size: 1.15rem;
+    color: #fceedc;
+    border: 0;
+}
+
+button:hover {
+    background-color:#559a75;
+}
+
+.product_img {
+    width: 20%;
+}
+
+/* TEXT STYLES */
+
+p {
+    line-height: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #1e4530;
+    text-decoration: none;
+    font-weight:400;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #559a75;
+}
+
+h2 {
+    color: #1e4530;
+    text-align: center;
+    padding: 4rem 0rem;
+}
+
+/* SECTION STYLES - HOME */
+
+.new_prod {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 2rem 0rem;
+}
+
+/* MEDIA QUERIES - MOBILE DESIGN */
+
+@media (max-width: 812px) {
+    .header_content, .footer_content, .footer_info, section, {
+      margin: auto;
+      flex-direction: column;
+      line-height: 1rem;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        line-height: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+}
+
