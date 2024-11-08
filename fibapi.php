@@ -6,7 +6,7 @@
     //if a number is provided, run the sequence
     if (isset($_GET['number'])) {
 
-        $num = $_GET['number'];
+        $num = intval($_GET['number']);;
     
             $sequence = [];
 
