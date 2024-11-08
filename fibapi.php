@@ -23,7 +23,7 @@
                 }
             
 
-            $response = ["data" => $squence];
+            $response = ["data" => $sequence];
     
             echo json_encode($response);
     }
